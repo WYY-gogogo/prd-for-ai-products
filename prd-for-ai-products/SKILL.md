@@ -1,6 +1,18 @@
 ---
 name: prd-for-ai-products
-description: 专为AI应用产品编写的PRD生成指令包。适用于任何支持Markdown指令的AI平台（AI IDE、ChatGPT、Claude、Cursor等）。通过15个决策维度的系统化提问，输出既证明AI PM能力又可落地执行的专业PRD。不适用于非AI产品、纯竞品分析（无需PRD产出）、或已有完整PRD只需局部修改的场景。
+description: 将AI产品构思转化为专业PRD文档。通过15个决策维度的系统化提问，输出15章结构的完整PRD，附带AI PM能力信号映射表。
+triggers:
+  - 帮我写AI产品的PRD
+  - 我有个AI产品想法
+  - AI产品需求文档
+  - 把构思变成AI产品的PRD
+  - PRD for AI product
+commands:
+  - 接收用户的AI产品构思，理解核心AI能力和产品定位
+  - 分5批提问（每批3个问题），锁定15个决策维度
+  - 编写含4个AI专属章节的15章完整PRD
+  - 生成AI PM能力信号映射表（附录B）
+  - 双重校验（决策点覆盖+能力信号覆盖）后交付
 ---
 
 # PRD-for-AI-Products：专为AI应用产品编写的PRD生成指令包
