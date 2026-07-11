@@ -1,0 +1,46 @@
+{
+  "skill": "prd-for-ai-products",
+  "alias": "write-ai-prd",
+  "version": "1.0",
+  "note": "鲁班工坊打磨时沉淀的验证资产。每个 prompt 用于干跑 Skill 工作流，核对'类型识别 / 复杂度定级 / 条件触发维度 / 必覆盖章节'是否符合预期。",
+  "prompts": [
+    {
+      "id": "T1",
+      "input": "我想做一款AI辅助合同审查工具，面向中小企业法务",
+      "expect": {
+        "detect_type": "AI增强产品",
+        "complexity": "L2-L3",
+        "triggered_enhancements": ["评估与验收", "六个关键交互模式", "Prompt规格+知识源"],
+        "must_cover_sections": [
+          "3.2 AI能力边界定义",
+          "7.6 Prompt/指令规格",
+          "11.8 异常与降级设计",
+          "14.3 评估与验收",
+          "17.2 权限分级（写操作需人工确认）"
+        ]
+      }
+    },
+    {
+      "id": "T2",
+      "input": "我想用某游戏IP资产做一款AI即时生成小游戏的应用，竞品没有这些IP",
+      "expect": {
+        "detect_type": "AI原生产品",
+        "complexity": "L3-L4",
+        "triggered_enhancements": ["评估与验收", "六个关键交互模式", "Prompt规格+知识源", "Agent行为定义(若Agent类)", "工具与接口(若Agent类)"],
+        "must_cover_sections": [
+          "3.2 AI能力边界定义",
+          "7.6 Prompt/指令规格",
+          "14.3 评估与验收"
+        ]
+      }
+    },
+    {
+      "id": "T3",
+      "input": "帮我做个公司官网",
+      "expect": {
+        "detect_type": "非AI产品（传统）",
+        "action": "建议改用通用PRD流程，不硬套AI专属维度（验证安全边界'不越权生成'）"
+      }
+    }
+  ]
+}
