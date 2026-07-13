@@ -1,6 +1,6 @@
 # PRD for AI Products
 
-> 专为AI应用产品编写的PRD生成指令包。
+> 专为AI应用产品编写的PRD生成指令包Skill。
 > 通过15个决策维度的系统化提问，输出结构完整、可落地的专业AI产品PRD。
 
 **通用AI指令** · 零外部依赖 · 适用于任何支持Markdown指令的AI平台
